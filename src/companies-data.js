@@ -1,4 +1,4 @@
-export const data = [
+export const companiesData = [
   {
     fieldData: {
       City: "Lake Gertrude",
