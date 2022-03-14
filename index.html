@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <style>
-      @import "./src/style.css";
+      @import "node_modules/bootstrap/dist/css/bootstrap.min.css";
     </style>
     <title>JSDev</title>
   </head>
-  <body>
-    <h1>Alright. You're set.</h1>
-    <h2>Now build something amazing!</h2>
-    <button type="button">Click Me!</button>
+  <body class="bg-primary">
+    <div class="container p-1">
+      <div class="row mt-2">
+        <div
+          class="col border-end border-5 border-dark bg-secondary bg-gradient text-light"
+        >
+          <h2 class="mb-4">BEFORE</h2>
+          <pre id="before"></pre>
+        </div>
+        <div class="col bg-light bg-gradient">
+          <h2 class="mb-4">AFTER</h2>
+          <pre id="after"></pre>
+        </div>
+      </div>
+    </div>
 
     <script type="module">
       import "./src/index.js";
