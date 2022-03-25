@@ -14,7 +14,7 @@ function constructNewObject(e) {
 }
 
 const filterData = function (e) {
-  return e.fieldData.State === "TX";
+  return e.fieldData.State === "CA";
 };
 
 const manipulatedData = companiesData
