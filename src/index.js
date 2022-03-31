@@ -1,28 +1,20 @@
 import { companiesData } from "./companies-data";
 import { salesData } from "./sales-data";
 
-const before = document.getElementById("before");
-before.innerHTML = JSON.stringify(companiesData, null, 2);
-
-function constructNewObject(e) {
-  const obj = {
-    city: e.fieldData.City,
-    state: e.fieldData.State,
-    cityState: `City / State: ${e.fieldData.City}, ${e.fieldData.State}`,
-  };
-  return obj;
-}
-
-const filterData = function (e) {
-  return e.fieldData.State === "CA";
+const clickMe = () => {
+  alert(this.id);
 };
 
-const manipulatedData = companiesData
-  .filter(filterData) //only show texas records
-  .map(constructNewObject); //constrcut the new object with those TX records.
-
 // const manipulatedData = companiesData.filter(filterData);
-const after = document.getElementById("after");
-after.innerHTML = JSON.stringify(manipulatedData, null, 2);
+companiesData.forEach((e) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.id = e.fieldData.id;
+  button.addEventListener("click", clickMe);
+  button.innerHTML = e.fieldData.CompanyName;
+  button.className = "btn-sm col-3 border btn bg-primary text-white";
+
+  after.appendChild(button);
+});
 
 //functions are here
