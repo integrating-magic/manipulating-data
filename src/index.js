@@ -1,18 +1,15 @@
 import { companiesData } from "./companies-data";
 
-const extraRecord = {
-  title: "JS in FM Training",
-  type: "Binge Mode",
-  cohort: "2",
-  startDate: "2022-04-12",
-};
+
 
 const before = document.getElementById("before");
 before.innerHTML = JSON.stringify(companiesData, null, 2);
 
+//TODO: object functions.
 //TODO: Extract an element from the array.
-//TODO: Add elements to beginning and end of array.
-//TODO: Remove Elements from end of array.
+
+//TODO: Add elements and remove to beginning and end of array.
+
 //TODO: Create a new array from old data.
 //TODO: Filter for a certain state.
 //TODO: Find the first element with a certain name.
@@ -21,4 +18,4 @@ before.innerHTML = JSON.stringify(companiesData, null, 2);
 //functions are here
 const manipulatedData = [];
 
-after.innerHTML = JSON.stringify(manipulatedData, null, 2);
+//TODO: write manipulated data to the 'after' div.
