@@ -1,6 +1,6 @@
 export const extraRecord = {
-  title: "June JS in FM Training",
-  type: "Binge Mode",
+  title: "August JS in FM Training",
+  type: "Relax Mode",
   cohort: "7",
-  startDate: "2022-06-07",
+  startDate: "2022-08-04",
 };
